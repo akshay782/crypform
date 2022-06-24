@@ -1,0 +1,60 @@
+.joinus {
+  width: 100%;
+  padding: 5% 12%;
+
+  &__signin {
+    text-align: end;
+    color: #8692a6;
+
+    span {
+      cursor: pointer;
+      color: #1565d8;
+    }
+  }
+
+  
+  &__heading {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 60px;
+  }
+
+  &__message {
+    margin-top: 10px;
+    color: #8692a6;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .plan__btn {
+    box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+    margin-top: 20px;
+    display: flex;
+    // justify-content: flex-start; //space-bet
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 70%;
+
+    &:hover{
+        border: 1px solid #1565d8;
+    }
+
+    &__icon{
+        margin-right: 20px;
+    }
+
+    &__heading_message{
+        .plan__btn__heading{
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+        .plan__btn__message{
+            color: #8692a6;
+            font-size: 0.8rem;
+        }
+    }
+  }
+}

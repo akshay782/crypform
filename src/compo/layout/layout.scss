@@ -1,0 +1,72 @@
+.outer_container {
+  //   border: 1px solid red;
+  height: 100vh;
+  display: flex;
+
+  .rightside {
+    color: white;
+    background-image: url(./../../assets/images/buildings.png);
+    background-size: cover;
+    background-position: top center;
+    // background-color: red;
+    width: 40%;
+    height: 100%;
+    z-index: 1;
+    padding: 3% 7% 0 5%;
+
+    &::after {
+      width: 40%;
+      height: 100%;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #1565d8;
+      opacity: 0.9;
+      z-index: -1;
+    }
+
+    .brand {
+      width: fit-content;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1rem;
+      .logo {
+        margin-right: 5px;
+      }
+    }
+
+    .message_box {
+      margin-top: 40px;
+      .message {
+        font-weight: 400;
+        margin-top: 40%;
+        line-height: 1.9rem;
+      }
+      .by_whom {
+        margin-top: 5%;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+
+        span {
+          margin-top: 3px;
+          margin-left: 10px;
+        }
+      }
+      .prop_corner {
+        text-align: right;
+        margin-top: 10%;
+      }
+    }
+  }
+
+  .leftside {
+    width: 60%;
+    height: 100%;
+    // background-color: blueviolet;
+  }
+}
