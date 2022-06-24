@@ -1,31 +1,16 @@
 import React, { useState } from "react";
-import "./register.scss";
-import Back_arrow from "../../assets/icons/back_arrow";
+import "./registerform.scss";
 import Google from "../../assets/icons/google";
 import Input from "../Input/input";
 
-function Register() {
+function Registerform() {
+    
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
   return (
-    <div className="registration">
-      <div className="registration_top">
-        <a href="/"><div className="register_back_btn">
-          <Back_arrow />
-          back
-        </div></a>
-        <div className="register_page_info">
-          <div className="first_child">step 01/03</div>
-          <div className="second_child">personal info.</div>
-        </div>
-      </div>
-      <div className="registration_container">
-        <div className="registerform_heading">register individual account!</div>
-        <div className="registerform_message">
-          For the purpose of industry regulation, your details are required.
-        </div>
-        <form>
+    <form>
           <Input
             htmlFor="name"
             type="text"
@@ -71,9 +56,7 @@ function Register() {
             Register with Google
           </button>
         </form>
-      </div>
-    </div>
-  );
+  )
 }
 
-export default Register;
+export default Registerform

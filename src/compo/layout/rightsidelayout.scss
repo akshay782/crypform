@@ -1,0 +1,57 @@
+.formcontainer {
+    width: 100%;
+    padding: 2% 8%;
+  
+    .formcontainer_top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      .formcontainer_back_btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: capitalize;
+        color: #8692a6;
+        font-size: 0.9rem;
+  
+        svg {
+          margin-right: 10px;
+        }
+      }
+  
+      .formcontainer_page_info {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        text-transform: capitalize;
+        font-size: 0.9rem;
+  
+        > :first-child {
+          color: #bdbdbd;
+          text-transform: uppercase;
+        }
+        > :last-child {
+          color: #8692a6;
+        }
+      }
+    }
+  
+    .formcontainer_container {
+      padding: 0% 8%;
+  
+      .formcontainer_heading {
+        margin-top: 35px;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+      .formcontainer_message {
+        margin-top: 5px;
+        color: #8692a6;
+        font-size: 0.9rem;
+      }
+    }
+}
