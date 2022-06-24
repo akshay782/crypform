@@ -19,14 +19,16 @@ function JoinUs() {
         account you’d be opening.
       </div>
 
-      <div className="plan__btn">
-        <div className="plan__btn__icon"><Individual_icon/></div>
-        <div className="plan__btn__heading_message">
-            <div className="plan__btn__heading">individual</div>
-            <div className="plan__btn__message">Personal account to manage all you activities.</div>
+      <a href="/register">
+        <div className="plan__btn">
+          <div className="plan__btn__icon"><Individual_icon/></div>
+          <div className="plan__btn__heading_message">
+              <div className="plan__btn__heading">individual</div>
+              <div className="plan__btn__message">Personal account to manage all you activities.</div>
+          </div>
+          <div className="plan__btn__go_arrow"><Arrow_right/></div>
         </div>
-        <div className="plan__btn__go_arrow"><Arrow_right/></div>
-      </div>
+      </a>
 
       <div className="plan__btn">
         <div className="plan__btn__icon"><Briefcase_icon/></div>
