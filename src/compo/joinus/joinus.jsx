@@ -1,10 +1,18 @@
 import React from "react";
 import "./joinus.scss";
+import {useNavigate} from "react-router-dom";
 import Individual_icon from "../../assets/icons/individual_icon";
 import Arrow_right from "../../assets/icons/arrow_right";
 import Briefcase_icon from "../../assets/icons/briefcase_icon";
 
 function JoinUs() {
+
+  const navigate = useNavigate();
+
+  const navigateToRegister =()=>{
+    navigate('/register');
+  }
+
   return (
     <div className="joinus">
 
@@ -19,18 +27,16 @@ function JoinUs() {
         account you’d be opening.
       </div>
 
-      <a href="/register">
-        <div className="plan__btn">
-          <div className="plan__btn__icon"><Individual_icon/></div>
-          <div className="plan__btn__heading_message">
-              <div className="plan__btn__heading">individual</div>
-              <div className="plan__btn__message">Personal account to manage all you activities.</div>
-          </div>
-          <div className="plan__btn__go_arrow"><Arrow_right/></div>
+      <div className="plan__btn" onClick={navigateToRegister}>
+        <div className="plan__btn__icon"><Individual_icon/></div>
+        <div className="plan__btn__heading_message">
+            <div className="plan__btn__heading">individual</div>
+            <div className="plan__btn__message">Personal account to manage all you activities.</div>
         </div>
-      </a>
+        <div className="plan__btn__go_arrow"><Arrow_right/></div>
+      </div>
 
-      <div className="plan__btn">
+      <div className="plan__btn" onClick={navigateToRegister}>
         <div className="plan__btn__icon"><Briefcase_icon/></div>
         <div className="plan__btn__heading_message">
             <div className="plan__btn__heading">business</div>

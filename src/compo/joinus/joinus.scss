@@ -12,7 +12,6 @@
     }
   }
 
-  
   &__heading {
     font-size: 2rem;
     font-weight: 600;
@@ -28,6 +27,7 @@
   }
 
   .plan__btn {
+    cursor: pointer;
     box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.06);
     border-radius: 6px;
     margin-top: 20px;
@@ -37,24 +37,40 @@
     align-items: center;
     padding: 20px;
     max-width: 70%;
-
-    &:hover{
-        border: 1px solid #1565d8;
+    border: 1px solid transparent;
+    
+    &__go_arrow {
+      visibility: hidden;
     }
 
-    &__icon{
-        margin-right: 20px;
+    &:hover {
+      border: 1px solid #1565d8;
+
+      .plan__btn__icon {
+        svg {
+          fill: #1565d8;
+          stroke: white;
+        }
+      }
+
+      .plan__btn__go_arrow {
+        visibility: visible;
+      }
     }
 
-    &__heading_message{
-        .plan__btn__heading{
-            font-weight: 700;
-            text-transform: capitalize;
-        }
-        .plan__btn__message{
-            color: #8692a6;
-            font-size: 0.8rem;
-        }
+    &__icon {
+      margin-right: 20px;
+    }
+
+    &__heading_message {
+      .plan__btn__heading {
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+      .plan__btn__message {
+        color: #8692a6;
+        font-size: 0.8rem;
+      }
     }
   }
 }

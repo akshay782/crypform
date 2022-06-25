@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./profileform.scss";
 import Input from "../Input/input";
 import Lock from "../../assets/icons/lock";
@@ -7,6 +8,12 @@ function Profileform() {
   const [phonenumber, setPhoneNumber] = useState("");
   const [address, setAddress] = useState("");
   const [country, setCountry] = useState("");
+
+  const navigate = useNavigate();
+
+  const navigateToBankVerify = () =>{
+    navigate('/bank-verify');
+  }
 
   return (
     <form>
@@ -41,7 +48,7 @@ function Profileform() {
         onChange={(e) => setCountry(e.target.value)}
       />
 
-      <button className="click_register">save &amp; continue</button>
+      <button className="click_register" onClick={navigateToBankVerify}>save &amp; continue</button>
 
       <div className="security_msg">
         <span>
